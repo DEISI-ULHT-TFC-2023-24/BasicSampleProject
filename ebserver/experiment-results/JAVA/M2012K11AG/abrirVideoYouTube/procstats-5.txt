@@ -1,0 +1,296 @@
+AGGREGATED OVER LAST 1 HOURS:
+  * com.instagram.android / u0a279 / v371911965:
+         TOTAL: 100%
+           Top: 100%
+  * com.google.android.apps.messaging:rcs / u0a206 / v157556063:
+         TOTAL: 100%
+    Bnd TopFgs: 100%
+  * com.android.phone / 1001 / v33:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.xiaomi.finddevice / 6110 / v33:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.xiaomi.barrage / 1000 / v112:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.lbe.security.miui / u0a95 / v183:
+         TOTAL: 100%
+        Imp Bg: 100%
+  * com.google.android.apps.messaging / u0a206 / v157556063:
+         TOTAL: 100%
+       Service: 100%
+  * com.google.android.inputmethod.latin / u0a205 / v94563822:
+         TOTAL: 100%
+    Bnd TopFgs: 100%
+  * com.xiaomi.NetworkBoost / 1000 / v33:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.google.android.as / u0a230 / v8486838:
+         TOTAL: 100% (35MB-35MB-35MB/29MB-29MB-29MB/97MB-97MB-97MB over 1)
+    Bnd TopFgs: 100% (35MB-35MB-35MB/29MB-29MB-29MB/97MB-97MB-97MB over 1)
+  * com.google.android.gms.persistent / u0a194 / v234414038:
+         TOTAL: 100%
+    Bnd TopFgs: 100%
+  * com.qti.qcc / 1000 / v6:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.miui.msa.global / u0a156 / v2023122102:
+         TOTAL: 100%
+        Imp Bg: 100%
+  * com.xiaomi.mtb / 1000 / v33:
+         TOTAL: 100% (6,7MB-6,7MB-6,7MB/5,6MB-5,6MB-5,6MB/67MB-67MB-67MB over 1)
+       Service: 100% (6,7MB-6,7MB-6,7MB/5,6MB-5,6MB-5,6MB/67MB-67MB-67MB over 1)
+  * com.android.systemui / 1000 / v202207140:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.miui.misound / u0a142 / v230227:
+         TOTAL: 100%
+           Fgs: 100%
+  * com.miui.face / 1000 / v1180700:
+         TOTAL: 100%
+    Persistent: 100%
+  * .qtidataservices / u0a6 / v1:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.modemdebug / 1000 / v3:
+         TOTAL: 100%
+       Service: 100%
+  * com.miui.miwallpaper / u0a150 / v500180151:
+         TOTAL: 100%
+    Bnd TopFgs: 100%
+  * com.android.bluetooth / 1002 / v33:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.xiaomi.bluetooth / 1002 / v33:
+         TOTAL: 100%
+       Service: 100%
+  * com.xiaomi.devauth / 1000 / v220812:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.android.se / 1068 / v33:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.qti.diagservices / 1000 / v33:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.qualcomm.qti.devicestatisticsservice / u0a233 / v33:
+         TOTAL: 100%
+    Persistent: 100%
+  * org.codeaurora.ims / u0a226 / v1:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.qti.phone / u0a358 / v33:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.facebook.services / u0a79 / v564596705:
+         TOTAL: 100%
+       Service: 100%
+  * com.android.networkstack.process / 1073 / v331710000:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.android.nfc / 1027 / v33:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.miui.daemon / 1000 / v30:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.google.android.googlequicksearchbox:interactor / u0a195 / v301224767:
+         TOTAL: 100%
+    Bnd TopFgs: 100%
+  * com.miui.aod:settings / 1000 / v21101116:
+         TOTAL: 100% (13MB-13MB-13MB/4,2MB-4,2MB-4,2MB/55MB-55MB-55MB over 1)
+        Imp Fg: 100% (13MB-13MB-13MB/4,2MB-4,2MB-4,2MB/55MB-55MB-55MB over 1)
+  * com.google.android.googlequicksearchbox:search / u0a195 / v301224767:
+         TOTAL: 100%
+       Service: 100%
+  * org.mipay.android.manager / u0a353 / v30:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.xiaomi.discover / u0a136 / v2000786:
+         TOTAL: 100%
+       Service: 100%
+  * com.miui.aod / 1000 / v21101116:
+         TOTAL: 100% (33MB-33MB-33MB/26MB-26MB-26MB/103MB-103MB-103MB over 1)
+        Imp Fg: 100% (33MB-33MB-33MB/26MB-26MB-26MB/103MB-103MB-103MB over 1)
+  * system / u0a76 / v1110000:
+         TOTAL: 100%
+    Persistent: 100%
+  * system / 1000 / v33:
+         TOTAL: 100%
+    Persistent: 100%
+  * .dataservices / 1001 / v1:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.tencent.soter.soterserver / u0a355 / v30:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.mi.android.globallauncher / u0a103 / v439076141:
+         TOTAL: 100%
+    Bnd TopFgs: 100%
+  * com.xiaomi.joyose / 1000 / v262:
+         TOTAL: 100%
+       Service: 100%
+  * com.qualcomm.location / u0a227 / v32:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.google.android.ims / u0a183 / v31030056:
+         TOTAL: 100%
+       Service: 100%
+  * com.qualcomm.qti.workloadclassifier / u0a231 / v33:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.miui.analytics / u0a139 / v2023092800:
+         TOTAL: 100% (21MB-21MB-21MB/14MB-14MB-14MB/75MB-75MB-75MB over 1)
+        Imp Fg: 100% (21MB-21MB-21MB/14MB-14MB-14MB/75MB-75MB-75MB over 1)
+  * org.ifaa.aidl.manager / u0a354 / v30:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.xiaomi.xmsf / u0a125 / v60001007:
+         TOTAL: 100% (26MB-26MB-26MB/8,7MB-8,7MB-8,7MB/65MB-65MB-65MB over 1)
+    Bnd TopFgs: 100% (26MB-26MB-26MB/8,7MB-8,7MB-8,7MB/65MB-65MB-65MB over 1)
+  * com.google.android.providers.media.module / u0a241 / v33:
+         TOTAL: 100% (34MB-34MB-34MB/14MB-14MB-14MB/74MB-74MB-74MB over 1)
+    Persistent: 100% (34MB-34MB-34MB/14MB-14MB-14MB/74MB-74MB-74MB over 1)
+  * com.google.android.gms / u0a194 / v234414038:
+         TOTAL: 100%
+    Bnd TopFgs: 100%
+  * com.miui.powerkeeper / 1000 / v40200:
+         TOTAL: 100%
+           Fgs: 100%
+  * com.miui.securitycenter.remote / 1000 / v40000876:
+         TOTAL: 100%
+           Fgs: 100%
+  * com.android.smspush / u0a240 / v33:
+         TOTAL: 100%
+        Imp Fg: 100%
+  * com.google.android.ext.services / u0a248 / v331412000:
+         TOTAL: 100%
+    Bnd TopFgs: 100%
+  * com.xiaomi.xmsfkeeper / u0a131 / v10002:
+         TOTAL: 100%
+    Persistent: 100%
+  * com.example.android.testing.espresso.BasicSample / u0a234 / v1:
+         TOTAL: 41%
+           Fgs: 41%
+  * com.google.android.configupdater / u0a179 / v33:
+      (Cached): 100% (8,2MB-8,2MB-8,2MB/2,4MB-2,4MB-2,4MB/64MB-64MB-64MB over 1)
+  * com.android.settings / 1000 / v33:
+      (Cached): 100%
+  * android.process.media / u0a84 / v33:
+      (Cached): 100% (7,8MB-7,8MB-7,8MB/2,4MB-2,4MB-2,4MB/64MB-64MB-64MB over 1)
+  * com.android.htmlviewer:remote / u0a169 / v33:
+      (Cached): 100%
+  * com.google.android.gms.learning / u0a194 / v234414038:
+      (Cached): 100% (36MB-36MB-36MB/15MB-15MB-15MB/143MB-143MB-143MB over 1)
+  * com.google.android.permissioncontroller / u0a244 / v331710050:
+      (Cached): 100%
+  * com.android.providers.calendar / u0a78 / v13000001:
+      (Cached): 100% (6,7MB-6,7MB-6,7MB/764KB-764KB-764KB/65MB-65MB-65MB over 1)
+  * android.process.acore / u0a88 / v33:
+      (Cached): 100%
+  * android:ui / 1000 / v33:
+      (Cached): 100%
+  * com.miui.global.packageinstaller / u0a135 / v294:
+      (Cached): 100% (38MB-38MB-38MB/22MB-22MB-22MB/105MB-105MB-105MB over 1)
+  * com.android.calllogbackup / u0a88 / v33:
+      (Cached): 100% (5,3MB-5,3MB-5,3MB/188KB-188KB-188KB/62MB-62MB-62MB over 1)
+  * com.google.ar.core / u0a281 / v220390183:
+      (Cached): 100% (30MB-30MB-30MB/14MB-14MB-14MB/79MB-79MB-79MB over 1)
+  * com.android.htmlviewer / u0a169 / v33:
+      (Cached): 100%
+  * com.google.process.gapps / u0a194 / v33:
+      (Cached): 100% (10MB-10MB-10MB/8,5MB-8,5MB-8,5MB/77MB-77MB-77MB over 1)
+  * com.google.android.apps.turbo:aab / u0a193 / v10252957:
+      (Cached): 100% (12MB-12MB-12MB/2,3MB-2,3MB-2,3MB/66MB-66MB-66MB over 1)
+  * com.google.android.calendar / u0a212 / v2017115450:
+      (Cached): 100% (41MB-41MB-41MB/32MB-32MB-32MB/127MB-127MB-127MB over 1)
+  * com.facebook.system / u0a96 / v564596696:
+      (Cached): 100% (6,2MB-6,2MB-6,2MB/5,1MB-5,1MB-5,1MB/68MB-68MB-68MB over 1)
+  * com.google.android.gms:snet / u0a194 / v234414038:
+      (Cached): 100% (23MB-23MB-23MB/7,9MB-7,9MB-7,9MB/124MB-124MB-124MB over 1)
+  * com.whatsapp / u0a366 / v240176004:
+      (Cached): 100%
+  * com.android.vending:background / u0a189 / v83973430:
+      (Cached): 100% (46MB-46MB-46MB/5,4MB-5,4MB-5,4MB/99MB-99MB-99MB over 1)
+  * com.google.android.gm / u0a207 / v63483937:
+      (Cached): 100% (57MB-57MB-57MB/27MB-27MB-27MB/99MB-99MB-99MB over 1)
+  * com.miui.android.fashiongallery / u0a256 / v20230830:
+      (Cached): 100% (22MB-22MB-22MB/7,5MB-7,5MB-7,5MB/84MB-84MB-84MB over 1)
+  * com.facebook.appmanager / u0a157 / v564596787:
+      (Cached): 100% (19MB-19MB-19MB/17MB-17MB-17MB/94MB-94MB-94MB over 1)
+  * com.xiaomi.mipicks:globalPay / u0a158 / v4003085:
+      (Cached): 100%
+  * com.revolut.revolut / u0a25 / v1000701367:
+      (Cached): 100% (114MB-114MB-114MB/88MB-88MB-88MB/184MB-184MB-184MB over 1)
+  * com.google.android.youtube / u0a214 / v1541017024:
+      (Cached): 100%
+  * com.miui.notes:widgetProvider / u0a151 / v618:
+      (Cached): 100% (23MB-23MB-23MB/22MB-22MB-22MB/91MB-91MB-91MB over 1)
+  * com.google.android.webview:webview_service / u0a200 / v511209734:
+      (Cached): 100% (7,0MB-7,0MB-7,0MB/184KB-184KB-184KB/65MB-65MB-65MB over 1)
+  * com.google.android.apps.wellbeing / u0a190 / v439367:
+      (Cached): 100% (32MB-32MB-32MB/30MB-30MB-30MB/107MB-107MB-107MB over 1)
+  * com.google.android.partnersetup / u0a184 / v1450:
+      (Cached): 100% (6,1MB-6,1MB-6,1MB/760KB-760KB-760KB/64MB-64MB-64MB over 1)
+  * com.google.android.apps.safetyhub / u0a249 / v10113533:
+      (Cached): 100% (22MB-22MB-22MB/11MB-11MB-11MB/74MB-74MB-74MB over 1)
+  * com.android.chrome / u0a202 / v511209734:
+      (Cached): 100% (16MB-16MB-16MB/13MB-13MB-13MB/82MB-82MB-82MB over 1)
+  * com.google.process.gservices / u0a194 / v33:
+      (Cached): 100%
+  * com.android.settings:remote / 1000 / v33:
+    (Last Act): 100%
+  * com.android.vending:instant_app_installer / u0a189 / v83973430:
+      (Cached): 100% (38MB-38MB-38MB/4,9MB-4,9MB-4,9MB/90MB-90MB-90MB over 1)
+  * com.google.android.apps.turbo / u0a193 / v10252957:
+      (Cached): 100%
+  * com.google.android.apps.walletnfcrel / u0a277 / v930338456:
+      (Cached): 100% (28MB-28MB-28MB/9,4MB-9,4MB-9,4MB/98MB-98MB-98MB over 1)
+  * tv.twitch.android.app / u0a278 / v1703006:
+      (Cached): 100% (133MB-133MB-133MB/101MB-101MB-101MB/226MB-226MB-226MB over 1)
+  * com.milink.service / u0a160 / v12040829:
+      (Cached): 100%
+  * com.milink.runtime / u0a160 / v12040829:
+      (Cached): 100%
+  * com.google.android.tts / u0a210 / v210395421:
+      (Cached): 100% (27MB-27MB-27MB/14MB-14MB-14MB/80MB-80MB-80MB over 1)
+  * com.google.android.apps.subscriptions.red / u0a211 / v236687:
+      (Cached): 100% (15MB-15MB-15MB/7,1MB-7,1MB-7,1MB/70MB-70MB-70MB over 1)
+  * com.microsoft.skydrive / u0a303 / v2026540402:
+      (Cached): 100% (54MB-54MB-54MB/28MB-28MB-28MB/114MB-114MB-114MB over 1)
+  * com.google.android.apps.photos / u0a254 / v44608935:
+      (Cached): 100% (39MB-39MB-39MB/21MB-21MB-21MB/95MB-95MB-95MB over 1)
+  * com.miui.msa.global:ui / u0a156 / v2023122102:
+      (Cached): 100% (14MB-14MB-14MB/3,3MB-3,3MB-3,3MB/79MB-79MB-79MB over 1)
+  * com.miui.mishare.connectivity / u0a90 / v21600:
+      (Cached): 100%
+  * com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0 / u0a278 / v511209734:
+      (Cached): 100% (36MB-36MB-36MB/17MB-17MB-17MB/102MB-102MB-102MB over 1)
+  * com.android.keychain / 1000 / v33:
+      (Cached): 100% (8,8MB-8,8MB-8,8MB/7,7MB-7,7MB-7,7MB/70MB-70MB-70MB over 1)
+  * com.google.android.apps.setupwizard.searchselector / u0a186 / v640:
+      (Cached): 100% (8,7MB-8,7MB-8,7MB/2,3MB-2,3MB-2,3MB/64MB-64MB-64MB over 1)
+  * com.android.vending / u0a189 / v83973430:
+      (Cached): 100% (110MB-110MB-110MB/75MB-75MB-75MB/186MB-186MB-186MB over 1)
+  * com.miui.securitycenter / 1000 / v40000876:
+      (Cached): 100%
+
+Run time Stats:
+   SOn/Norm: +392ms
+      TOTAL: +392ms
+
+Memory usage:
+  Persist: 34MB (1 samples)
+  BTopFgs: 61MB (2 samples)
+  ImpFg: 67MB (3 samples)
+  Service: 6,7MB (1 samples)
+  CchEmty: 1,1GB (35 samples)
+  TOTAL  : 1,2GB
+
+PSS collection stats:
+  Internal Single: 0x over 0
+  Internal All Procs (Memory Change): 0x over 0
+  Internal All Procs (Polling): 42x over +356ms
+  External: 0x over 0
+  External Slow: 0x over 0
