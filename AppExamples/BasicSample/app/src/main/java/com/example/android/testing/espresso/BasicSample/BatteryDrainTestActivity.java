@@ -6,19 +6,19 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class BatteryDrainTestActivity extends AppCompatActivity {
 
-
     private static final String YOUTUBE_VIDEO_ID = "dQw4w9WgXcQ";
-    public static final long WATCH_DURATION = 2 * 60 * 1000; // 2 minutes in milliseconds
-
+    public static final long WATCH_DURATION = 2 * 60 * 100; // 2 minutes in milliseconds
+                                                            // TODO 13s right now for debug purposes
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_battery_drain);
-
 
         openYouTubeVideo(YOUTUBE_VIDEO_ID);
 

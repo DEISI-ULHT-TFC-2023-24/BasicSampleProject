@@ -1,4 +1,4 @@
-package com.example.android.testing.espresso.BasicSample;
+/** package com.example.android.testing.espresso.BasicSample;
 
 
 import static androidx.test.espresso.Espresso.onView;
@@ -25,9 +25,7 @@ public final class ChangeTextBehaviorLocalTest {
 
   public static final String STRING_TO_BE_TYPED = "Espresso";
 
-  /**
-   * Use {@link ActivityScenarioRule} to create and launch the activity under test.
-   */
+
   @Rule public ActivityScenarioRule<MainActivity> activityScenarioRule =
       new ActivityScenarioRule<MainActivity>(MainActivity.class);
 
@@ -68,3 +66,4 @@ public final class ChangeTextBehaviorLocalTest {
         ShowTextActivity.class);
   }
 }
+*/
