@@ -33,7 +33,7 @@ public class FlashlightTest {
         flashlightTestActivity.turnOnFlashlightForTest();
 
         try {
-            Thread.sleep(15000);
+            Thread.sleep(120000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -53,7 +53,7 @@ public class FlashlightTest {
         flashlightTestActivity.turnOffFlashlightForTest();
 
         try {
-            Thread.sleep(15000); // Espera por 15 segundos
+            Thread.sleep(60000); // Espera por 15 segundos
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

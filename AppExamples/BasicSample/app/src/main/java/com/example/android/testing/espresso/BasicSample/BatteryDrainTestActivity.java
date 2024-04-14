@@ -1,36 +1,69 @@
 package com.example.android.testing.espresso.BasicSample;
 
-
-import android.annotation.SuppressLint;
+import android.content.ContentResolver;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.widget.TextView;
-
+import android.provider.Settings;
+import android.view.WindowManager;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class BatteryDrainTestActivity extends AppCompatActivity {
 
     private static final String YOUTUBE_VIDEO_ID = "dQw4w9WgXcQ";
-    public static final long WATCH_DURATION = 2 * 60 * 100; // 2 minutes in milliseconds
-                                                            // TODO 13s right now for debug purposes
+
+    public static final long WATCH_DURATION = 2 * 60 * 1000; // 2 minutes in milliseconds
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_battery_drain);
 
-        openYouTubeVideo(YOUTUBE_VIDEO_ID);
 
-        // fecha o youtube depois do watch_duration
-        new Handler().postDelayed(new Runnable() {
-            @SuppressLint("NewApi")
-            @Override
-            public void run() {
-                // fecha a app do youtube
-                finishAndRemoveTask();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (!Settings.System.canWrite(this)) {
+                requestSystemWritePermission();
+            } else {
+                proceedWithAppFunctionality();
             }
-        }, WATCH_DURATION);
+        } else {
+
+            proceedWithAppFunctionality();
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // When the user returns from the Settings screen, check again and proceed if permission has been granted.
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (Settings.System.canWrite(this)) {
+                proceedWithAppFunctionality();
+            }
+        }
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.M)
+    private void requestSystemWritePermission() {
+        Intent intent = new Intent(Settings.ACTION_MANAGE_WRITE_SETTINGS);
+        intent.setData(Uri.parse("package:" + getPackageName()));
+        startActivity(intent);
+    }
+
+    private void proceedWithAppFunctionality() {
+        setSystemBrightness(63);
+        openYouTubeVideo(YOUTUBE_VIDEO_ID);
+    }
+
+    private void setSystemBrightness(int brightnessValue) {
+        ContentResolver resolver = getContentResolver();
+        Settings.System.putInt(resolver, Settings.System.SCREEN_BRIGHTNESS, brightnessValue);
+
+        WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
+        layoutParams.screenBrightness = brightnessValue / 255.0f;
+        getWindow().setAttributes(layoutParams);
     }
 
     private void openYouTubeVideo(String videoId) {
