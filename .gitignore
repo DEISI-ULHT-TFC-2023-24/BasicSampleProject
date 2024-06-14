@@ -1,3 +1,6 @@
+#ebserver data
+ebserver/experiment-results/
+
 # Logs
 logs
 *.log
