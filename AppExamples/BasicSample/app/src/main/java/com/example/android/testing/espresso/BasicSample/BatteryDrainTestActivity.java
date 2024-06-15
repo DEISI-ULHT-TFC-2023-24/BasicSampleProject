@@ -37,13 +37,6 @@ public class BatteryDrainTestActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        // When the user returns from the Settings screen,
-        // check again and proceed if permission has been granted.
-       /* if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (Settings.System.canWrite(this)) {
-                proceedWithAppFunctionality();
-            }
-        }*/
     }
 
     @RequiresApi(api = Build.VERSION_CODES.M)
