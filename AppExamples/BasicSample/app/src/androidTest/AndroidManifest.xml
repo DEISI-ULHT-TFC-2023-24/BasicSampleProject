@@ -24,6 +24,8 @@
         android:name="androidx.test.runner.AndroidJUnitRunner"/>
 
     <application tools:replace="label" android:label="BasicSampleTest">
+        <activity android:name="com.example.android.testing.espresso.BasicSample.MainActivity" />
+        <activity android:name="com.example.android.testing.espresso.BasicSample.ShowTextActivity" />
         <activity android:name="com.example.android.testing.espresso.BasicSample.FlashlightTestActivity" />
         <activity android:name="com.example.android.testing.espresso.BasicSample.BatteryDrainTestActivity" />
         <activity android:name="com.example.android.testing.espresso.BasicSample.GoogleKeepTestActivity" />

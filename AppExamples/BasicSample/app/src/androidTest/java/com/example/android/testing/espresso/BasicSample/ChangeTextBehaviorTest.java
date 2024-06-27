@@ -16,14 +16,11 @@
 
 package com.example.android.testing.espresso.BasicSample;
 
-import android.app.Activity;
-
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import androidx.test.espresso.action.ViewActions;
-import androidx.test.espresso.matcher.ViewMatchers;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.filters.LargeTest;
@@ -31,23 +28,26 @@ import androidx.test.filters.LargeTest;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.action.ViewActions.closeSoftKeyboard;
-import static androidx.test.espresso.action.ViewActions.typeText;
+import static androidx.test.espresso.action.ViewActions.replaceText;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 
-
-/**
- * Basic tests showcasing simple view matchers and actions like {@link ViewMatchers#withId},
- * {@link ViewActions#click} and {@link ViewActions#typeText}.
- * <p>
- * Note that there is no need to tell Espresso that a view is in a different {@link Activity}.
- */
 @RunWith(AndroidJUnit4.class)
 @LargeTest
 public class ChangeTextBehaviorTest {
 
-    public static final String STRING_TO_BE_TYPED = "Espresso";
+    public static final String STRING_TO_BE_TYPED =
+            "Esta é a primeira linha do texto.\n" +
+                    "Esta é a segunda linha do texto.\n" +
+                    "Esta é a terceira linha do texto.\n" +
+                    "Esta é a quarta linha do texto.\n" +
+                    "Esta é a quinta linha do texto.\n" +
+                    "Esta é a sexta linha do texto.\n" +
+                    "Esta é a sétima linha do texto.\n" +
+                    "Esta é a oitava linha do texto.\n" +
+                    "Esta é a nona linha do texto.\n" +
+                    "Finalmente, esta é a décima linha.";
 
     /**
      * Use {@link ActivityScenarioRule} to create and launch the activity under test, and close it
@@ -56,11 +56,24 @@ public class ChangeTextBehaviorTest {
     @Rule public ActivityScenarioRule<MainActivity> activityScenarioRule
             = new ActivityScenarioRule<>(MainActivity.class);
 
+    private void typeTextSlowly(final String text, final int delay) {
+        StringBuilder typedText = new StringBuilder();
+        for (char c : text.toCharArray()) {
+            typedText.append(c);
+            onView(withId(R.id.editTextUserInput)).perform(replaceText(typedText.toString()));
+            try {
+                Thread.sleep(delay);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        onView(withId(R.id.editTextUserInput)).perform(closeSoftKeyboard());
+    }
+
     @Test
     public void changeText_sameActivity() {
-        // Type text and then press the button.
-        onView(withId(R.id.editTextUserInput))
-                .perform(typeText(STRING_TO_BE_TYPED), closeSoftKeyboard());
+        // Type text slowly and then press the button.
+        typeTextSlowly(STRING_TO_BE_TYPED, 60000 / STRING_TO_BE_TYPED.length());
         onView(withId(R.id.changeTextBt)).perform(click());
 
         // Check that the text was changed.
@@ -69,12 +82,16 @@ public class ChangeTextBehaviorTest {
 
     @Test
     public void changeText_newActivity() {
-        // Type text and then press the button.
-        onView(withId(R.id.editTextUserInput)).perform(typeText(STRING_TO_BE_TYPED),
-                closeSoftKeyboard());
+        // Type text slowly and then press the button.
+        typeTextSlowly(STRING_TO_BE_TYPED, 60000 / STRING_TO_BE_TYPED.length());
         onView(withId(R.id.activityChangeTextBtn)).perform(click());
 
         // This view is in a different Activity, no need to tell Espresso.
         onView(withId(R.id.show_text_view)).check(matches(withText(STRING_TO_BE_TYPED)));
     }
 }
+
+
+
+
+

@@ -47,7 +47,7 @@ public class BatteryDrainTestActivity extends AppCompatActivity {
     }
 
     private void proceedWithAppFunctionality() {
-        setSystemBrightness(50); // Set system brightness to approximately 50%
+        setSystemBrightness(20); //  1 = 0%, 6 = 25%, 20 = 50%, 36 = 75% xiaomi f3 poco
         openYouTubeVideo(YOUTUBE_VIDEO_ID);
         // Schedule task to bring the app back to the foreground after WATCH_DURATION
         new Handler().postDelayed(new Runnable() {
@@ -66,7 +66,7 @@ public class BatteryDrainTestActivity extends AppCompatActivity {
         Settings.System.putInt(resolver, Settings.System.SCREEN_BRIGHTNESS, brightnessValue);
 
         WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
-        layoutParams.screenBrightness = brightnessValue / 255.0f; // 0.5 for 50%
+        layoutParams.screenBrightness = brightnessValue / 128.0f; // xiaomi poco f3
         getWindow().setAttributes(layoutParams);
     }
 

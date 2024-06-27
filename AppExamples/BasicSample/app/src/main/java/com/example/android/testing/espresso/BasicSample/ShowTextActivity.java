@@ -16,18 +16,17 @@
 
 package com.example.android.testing.espresso.BasicSample;
 
-import com.google.common.base.Strings;
-
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 /**
- * A simple {@link Activity} that shows a message.
+ * A simple {@link AppCompatActivity} that shows a message.
  */
-public class ShowTextActivity extends Activity {
+public class ShowTextActivity extends AppCompatActivity {
 
     // The name of the extra data sent through an {@link Intent}.
     public final static String KEY_EXTRA_MESSAGE =
@@ -40,10 +39,10 @@ public class ShowTextActivity extends Activity {
 
         // Get the message from the Intent.
         Intent intent = getIntent();
-        String message = Strings.nullToEmpty(intent.getStringExtra(KEY_EXTRA_MESSAGE));
+        String message = intent.getStringExtra(KEY_EXTRA_MESSAGE);
 
         // Show message.
-        ((TextView)findViewById(R.id.show_text_view)).setText(message);
+        ((TextView) findViewById(R.id.show_text_view)).setText(message);
     }
 
     /**
@@ -58,3 +57,5 @@ public class ShowTextActivity extends Activity {
         return newIntent;
     }
 }
+
+

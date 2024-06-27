@@ -1,7 +1,7 @@
 {
     "app_name": "JAVA",
-    "method_name": "testActivityOpensYouTubeApp",
-    "class_name": "BatteryYoutubeDrainTest",
+    "method_name": "changeText_newActivity",
+    "class_name": "ChangeTextBehaviorTest",
     "package_name": "com.example.android.testing.espresso.BasicSample",
     "suffix": "test",
     "exec_start": "1",
