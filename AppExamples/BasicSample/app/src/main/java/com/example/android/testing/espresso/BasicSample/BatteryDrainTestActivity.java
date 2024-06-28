@@ -5,7 +5,10 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.os.Handler;
+=======
+>>>>>>> upstream/main
 import android.provider.Settings;
 import android.view.WindowManager;
 import androidx.annotation.RequiresApi;
@@ -13,7 +16,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class BatteryDrainTestActivity extends AppCompatActivity {
 
+<<<<<<< HEAD
     private static final String YOUTUBE_VIDEO_ID = "xVWHuJOmaEk"; //updated to something without adds
+=======
+    private static final String YOUTUBE_VIDEO_ID = "dQw4w9WgXcQ";
+
+>>>>>>> upstream/main
     public static final long WATCH_DURATION = 2 * 60 * 1000; // 2 minutes in milliseconds
 
     @Override
@@ -21,6 +29,7 @@ public class BatteryDrainTestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_battery_drain);
 
+<<<<<<< HEAD
         // Check for WRITE_SETTINGS permission before adjusting brightness and opening YouTube.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (!Settings.System.canWrite(this)) {
@@ -57,8 +66,51 @@ public class BatteryDrainTestActivity extends AppCompatActivity {
                 Intent intent = new Intent(BatteryDrainTestActivity.this, BatteryDrainTestActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
+=======
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (!Settings.System.canWrite(this)) {
+                requestSystemWritePermission();
+            } else {
+                proceedWithAppFunctionality();
+>>>>>>> upstream/main
             }
-        }, WATCH_DURATION);
+        } else {
+
+            proceedWithAppFunctionality();
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // When the user returns from the Settings screen, check again and proceed if permission has been granted.
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (Settings.System.canWrite(this)) {
+                proceedWithAppFunctionality();
+            }
+        }
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.M)
+    private void requestSystemWritePermission() {
+        Intent intent = new Intent(Settings.ACTION_MANAGE_WRITE_SETTINGS);
+        intent.setData(Uri.parse("package:" + getPackageName()));
+        startActivity(intent);
+    }
+
+    private void proceedWithAppFunctionality() {
+        setSystemBrightness(63);
+        openYouTubeVideo(YOUTUBE_VIDEO_ID);
+    }
+
+    private void setSystemBrightness(int brightnessValue) {
+        ContentResolver resolver = getContentResolver();
+        Settings.System.putInt(resolver, Settings.System.SCREEN_BRIGHTNESS, brightnessValue);
+
+        WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
+        layoutParams.screenBrightness = brightnessValue / 255.0f;
+        getWindow().setAttributes(layoutParams);
     }
 
     private void setSystemBrightness(int brightnessValue) {
