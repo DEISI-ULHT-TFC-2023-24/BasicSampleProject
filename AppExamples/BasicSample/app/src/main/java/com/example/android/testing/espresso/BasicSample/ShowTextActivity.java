@@ -16,6 +16,7 @@
 
 package com.example.android.testing.espresso.BasicSample;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,7 +27,7 @@ import androidx.appcompat.app.AppCompatActivity;
 /**
  * A simple {@link AppCompatActivity} that shows a message.
  */
-public class ShowTextActivity extends AppCompatActivity {
+public class ShowTextActivity extends Activity {
 
     // The name of the extra data sent through an {@link Intent}.
     public final static String KEY_EXTRA_MESSAGE =

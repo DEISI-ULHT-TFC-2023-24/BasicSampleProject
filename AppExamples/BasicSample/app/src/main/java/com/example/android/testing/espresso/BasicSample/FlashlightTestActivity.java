@@ -74,7 +74,7 @@ public class FlashlightTestActivity extends AppCompatActivity {
             public void run() {
                 turnOffFlashlightForTest();
             }
-        }, 180000);
+        }, 60000);
     }
 
 
